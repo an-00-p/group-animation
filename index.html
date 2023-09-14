@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Example</title>
+    <style>
+        /* Style for the tree */
+        .tree {
+            padding-left: 20px;
+        }
+
+        /* Style for tree nodes */
+        .tree-node {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Style for tree node connectors */
+        .tree-node::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -10px;
+            border-left: 2px solid #333;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="tree">
+        <div class="tree-node">Root
+            <div class="tree-node">Child 1
+                <div class="tree-node">Grandchild 1</div>
+                <div class="tree-node">Grandchild 2</div>
+            </div>
+            <div class="tree-node">Child 2
+                <div class="tree-node">Grandchild 3</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
